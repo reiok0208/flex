@@ -1,10 +1,87 @@
-.flex {
-    background-color: #00c7ce;
-    height: 50vh;
-    padding: 10px;
+*{
+	margin: 0;
+	padding: 0;
 }
-.flex > div {
-    background-color: #fff;
-    margin: 5px;
-    font-size: 30px;
+
+
+body{
+	width: 100%;
+}
+
+.header{
+	display: flex;
+	background-color: #FB00FF;
+    padding: 30px 20px;
+    justify-content: flex-end;
+}
+
+.header > div{
+	background-color: #F89EFE;
+	margin: 0 10px;
+    flex-basis: 140px;
+    height: 70px;
+}
+
+.header > :first-child {
+    margin-right: auto;
+}
+
+.body{
+	display: flex;
+	background-color: #16AB1A;
+	max-width: 1000px;
+	margin-left: 100px;
+	margin-right: 100px;
+    justify-content:center;
+}
+
+.body > div:nth-child(1) {
+	background-color: #D1FFA7;
+	width: 300px;
+}
+
+.body > div:nth-child(2) {
+	display: flex;
+	background-color: #16AB1A;
+	max-width: 700px;
+	flex-grow: 1;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+
+.body-sub > div{
+    background-color: #FEF949;
+	margin: 10px;
+    flex-basis: 200px;
+    height: 130px;
+}
+
+
+.footer{
+	background-color: #438BFF;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer > div{
+    background-color: #A8E1FE;
+    height: 40px;
+    flex-basis: 45%;
+    max-width: 600px;
+    margin: 10px;
+}
+
+.footer > div:nth-child(1){
+
+}
+
+.footer > div:nth-child(2){
+
+}
+
+.footer > div:nth-child(3){
 }
